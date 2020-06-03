@@ -8,7 +8,7 @@ with open('config.json') as config_file:
 
 app = Flask(__name__)
 
-# enable CORS
+# enable CORS - Cross-Origin Resource Sharing
 CORS(app)
 
 
@@ -44,8 +44,12 @@ def all_books():
     })
 
 
+
 if __name__ == '__main__':
     # use the config file to get host and parameters
     with open('config.json') as config_file:
         config = json.load(config_file)
-    app.run(host=config['dev'], debug=True, port=80)
+
+    # debug=True enables interactive debugger will be shown for unhandled exceptions
+    # and the server will be reloaded when code changes
+    app.run(host=config['host'],debug=True, port=80)

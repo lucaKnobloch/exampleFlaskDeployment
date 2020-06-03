@@ -1,0 +1,17 @@
+version: '2.3'
+services:
+  # Flask connects the frontend with the backend so that the REST-Calls reponds
+  # redirect port 5000 to port 80
+  # volumes save (persist) data
+  flask:
+    image: flask-server:latest
+    restart: always
+    networks:
+      - nod-newscrawler
+    ports:
+      - 5000:80
+    volumes:
+      - .:/code
+
+networks:
+  nod-newscrawler:
