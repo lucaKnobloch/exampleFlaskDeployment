@@ -1,3 +1,4 @@
-Flask
+# the main flask dependencies are already installed by the parent docker image
+
+# to enable secruity related calls
 flask_cors
-requests

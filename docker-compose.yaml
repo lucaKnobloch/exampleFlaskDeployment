@@ -7,11 +7,11 @@ services:
     image: flask-server:latest
     restart: always
     networks:
-      - nod-newscrawler
+      - example-network
     ports:
       - 5000:80
     volumes:
       - .:/code
 
 networks:
-  nod-newscrawler:
+  example-network:

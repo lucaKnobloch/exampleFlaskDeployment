@@ -1,4 +1,5 @@
 # Example - Flask - Server
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=lucaKnobloch_exampleFlaskDeployment&metric=alert_status)](https://sonarcloud.io/dashboard?id=lucaKnobloch_exampleFlaskDeployment)
 ## Build Docker Locally 
 
   `docker build . -t flask-server:latest`
