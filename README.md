@@ -13,6 +13,8 @@ Its a baseline of a flask server which can be easily extended to the personal ne
 The created image is executable with the following command: 
   
   `docker run -d --name flask-server -p 80:80 flask-server`
+  
+  The default settings expose the image on port 80. If you want to redirect it, you can do it either here, expose another port in the dockerfile or in the docker-compose file.
 
   Afterward is the flask-server is reachable at
      `127.0.0.1:80`

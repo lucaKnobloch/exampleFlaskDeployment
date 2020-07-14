@@ -1,7 +1,7 @@
-version: '2.3'
+version: '3.8'
 services:
   # Flask connects the frontend with the backend so that the REST-Calls reponds
-  # redirect port 5000 to port 80
+  # redirect port 80 to port 5000
   # volumes save (persist) data
   flask:
     image: flask-server:latest
